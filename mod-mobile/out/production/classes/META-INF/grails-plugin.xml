@@ -1,0 +1,2 @@
+<plugin grailsVersion='3.2.3 &gt; *' name='modMobile' version='SNAPSHOT'><type>mod.mobile.ModMobileGrailsPlugin</type><grailsVersion>3.2.3 &gt; *</grailsVersion><authorEmail></authorEmail><pluginExcludes>[grails-app/views/error.gsp]</pluginExcludes><author>Your name</author><documentation>http://grails.org/plugin/mod-mobile</documentation><name>mod-mobile</name><description>Brief summary/description of the plugin.
+</description><title>Mod Mobile</title><version></version></plugin>

@@ -1,0 +1,21 @@
+<div class="nav" role="navigation">
+    <ul>
+        <li><a ui-sref="index" class="home">Home</a></li>
+        <li><a ui-sref="publisher.list" class="list">Publisher List</a></li>
+    </ul>
+</div>
+<div id="create-publisher" class="content scaffold-create" role="main">
+    <h1>Create Publisher</h1>
+    <ul class="errors" role="alert" ng-if="vm.errors">
+        <li ng-repeat="error in vm.errors">{{error.message}}</li>
+    </ul>
+
+    <form name="savePublisher" ng-submit="vm.savePublisher()">
+        <fieldset class="form">
+            <ng-include src="'/app/admin/jobsboard/publisher/form.html'"></ng-include>
+        </fieldset>
+        <fieldset class="buttons">
+            <input type="submit" name="create" class="save" value="Create" />
+        </fieldset>
+    </form>
+</div>

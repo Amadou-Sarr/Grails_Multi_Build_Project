@@ -1,0 +1,7 @@
+import app.admin.jobsboard.Job
+
+model {
+	Job job
+}
+
+json tmpl.job(job)

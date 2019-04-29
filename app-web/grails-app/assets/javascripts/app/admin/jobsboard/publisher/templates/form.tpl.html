@@ -1,0 +1,44 @@
+<fieldset class="form">
+  <div class="fieldcontain required">
+    <label for="name">Name
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="name" id="name" ng-model="vm.publisher.name" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="url">Url
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="url" id="url" ng-model="vm.publisher.url" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="contactEmail">Contact Email
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="contactEmail" id="contactEmail" ng-model="vm.publisher.contactEmail" type="email" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="location">Location
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="location" id="location" ng-model="vm.publisher.location" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="logo">Logo
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="logo" id="logo" file-model="vm.publisher.logo" type="file" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="twitterId">Twitter Id
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="twitterId" id="twitterId" ng-model="vm.publisher.twitterId" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="dateUpdated">Date Updated
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="dateUpdated" id="dateUpdated" ng-model="vm.publisher.dateUpdated" type="date" placeholder="YYYY-MM-DD" />
+  </div>
+</fieldset>

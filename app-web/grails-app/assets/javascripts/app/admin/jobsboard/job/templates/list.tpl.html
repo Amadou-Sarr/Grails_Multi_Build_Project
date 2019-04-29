@@ -1,0 +1,99 @@
+<!-- <div class="nav" role="navigation">
+    <ul>
+        <li><a ui-sref="index" class="home">Home</a></li>
+        <li><a ui-sref="job.create" class="create">New Job</a></li>
+    </ul>
+</div>
+<div id="list-job" class="content scaffold-list" role="main">
+    <h1>Job List</h1>
+    <table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Contact Email</th>
+      <th>Job Url</th>
+      <th>Apply Instructions</th>
+      <th>Salary Estimate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-class="{'even': $index%2 == 0, 'odd': $index%2 == 1}" ng-repeat="job in vm.jobList">
+      <td>
+        <a ui-sref="job.show({id: job.id})">{{job.id}}</a>
+      </td>
+      <td>
+        <span>{{job.title}}</span>
+      </td>
+      <td>
+        <span>{{job.description}}</span>
+      </td>
+      <td>
+        <span>{{job.contactEmail}}</span>
+      </td>
+      <td>
+        <span>{{job.jobUrl}}</span>
+      </td>
+      <td>
+        <span>{{job.applyInstructions}}</span>
+      </td>
+      <td>
+        <span>{{job.salaryEstimate}}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+-->
+    <!--    <div class="pagination">
+            <g:paginate total="${partCount ?: 0}" />
+        </div>-->
+<h1>Job List</h1>
+<table>
+  <thead>
+<tr>
+   <th>Id</th>
+   <th>Title</th>
+   <th>Description</th>
+   <th>Job Url</th>
+  <th>Contact Email</th>
+   <th>Apply Instructions</th>
+    <th>PUBLISHER Name</th>
+    <th>PUBLISHER Location</th>
+  A Web Rich Client - Angular Profile 136
+   <th>Salary Estimate</th>
+   </tr>
+ </thead>
+   <tbody>
+ <tr ng-class="{'even': $index%2 == 0, 'odd': $index%2 == 1}" ng-repeat="job in vm.jobList">
+   <td>
+   <a ui-sref="job.show({id: job.id})">{{job.id}}</a>
+   </td>
+   <td>
+   <span>{{job.title}}</span>
+</td>
+   <td>
+   <span>{{job.description}}</span>
+   </td>
+   <td>
+   <span>{{job.jobUrl}}</span>
+   </td>
+   <td>
+   <span>{{job.contactEmail}}</span>
+   </td>
+  <td>
+   <span>{{job.applyInstructions}}</span>
+   </td>
+   <td>
+     <span>{{job.salaryEstimate}}</span>
+ </td>
+     <td>
+         <span>  {{(vm.publisherList | filter:{id:job.publisher.id})[0].location}} </span>
+     </td>
+     <td>
+         <span>  {{(vm.publisherList | filter:{id:job.publisher.id})[0].name}} </span>
+     </td>
+   </tr>
+ </tbody>
+   </table>

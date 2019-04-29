@@ -1,0 +1,66 @@
+<div class="nav" role="navigation">
+    <ul>
+        <li><a ui-sref="index" class="home">Home</a></li>
+        <li><a class="list" ui-sref="publisher.list" class="list">Publisher List</a></li>
+        <li><a class="create" ui-sref="publisher.create" class="create">New Publisher</a></li>
+    </ul>
+</div>
+<div id="show-part" class="content scaffold-show" role="main">
+    <h1>Show Publisher</h1>
+    <ol class="property-list publisher">
+  <li class="fieldcontain">
+    <span id="name-label" class="property-label">Name</span>
+    <div class="property-value" aria-labelledby="name-label">
+      <span>{{vm.publisher.name}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="url-label" class="property-label">Url</span>
+    <div class="property-value" aria-labelledby="url-label">
+      <span>{{vm.publisher.url}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="contactEmail-label" class="property-label">Contact Email</span>
+    <div class="property-value" aria-labelledby="contactEmail-label">
+      <span>{{vm.publisher.contactEmail}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="location-label" class="property-label">Location</span>
+    <div class="property-value" aria-labelledby="location-label">
+      <span>{{vm.publisher.location}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="logo-label" class="property-label">Logo</span>
+    <div class="property-value" aria-labelledby="logo-label">
+      <span>{{vm.publisher.logo}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="dateCreated-label" class="property-label">Date Created</span>
+    <div class="property-value" aria-labelledby="dateCreated-label">
+      <span>{{vm.publisher.dateCreated | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="twitterId-label" class="property-label">Twitter Id</span>
+    <div class="property-value" aria-labelledby="twitterId-label">
+      <span>{{vm.publisher.twitterId}}</span>
+    </div>
+  </li>
+  <li class="fieldcontain">
+    <span id="dateUpdated-label" class="property-label">Date Updated</span>
+    <div class="property-value" aria-labelledby="dateUpdated-label">
+      <span>{{vm.publisher.dateUpdated | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>
+    </div>
+  </li>
+</ol>
+    <form ng-submit="vm.delete()">
+        <fieldset class="buttons">
+            <a class="edit" ui-sref="publisher.edit({id: vm.publisher.id})">Edit</a>
+            <input class="delete" type="submit" value="Delete" onclick="return confirm('Are you sure?');" />
+        </fieldset>
+    </form>
+</div>

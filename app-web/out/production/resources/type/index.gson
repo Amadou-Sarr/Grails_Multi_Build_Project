@@ -1,0 +1,8 @@
+import app.admin.jobsboard.Type
+
+model {
+	Iterable<Type> typeList
+}
+
+json tmpl.type(typeList ?: [])
+

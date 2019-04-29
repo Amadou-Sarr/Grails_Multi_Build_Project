@@ -1,0 +1,36 @@
+ <div class="job-listing job-listing--featured">
+     <div class="row">
+     <div class="col-sm-12 col-md-6">
+     <div class="row">
+     <div class="col-xs-2">
+     <img style="width: 50px; length: 50px"
+            ng-src="renderLogo?id={{job.publisher.id}}"
+            alt="{{job.publisher.name}}"
+            class="img-responsive">
+     </div>
+     <div class="col-xs-10">
+     <h4 class="job__title">
+     <a href="{{job.jobUrl}}">{{job.title}}</a>
+     </h4>
+     <p class="job__company">
+     {{(vm.publisherList | filter:{id:job.publisher.id})[0].name}}
+     </p>
+     </div>
+     </div>
+     </div>
+     <div class="col-xs-10 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-2 col-md-offset-0">
+     <i class="fa fa-map-marker job__location"></i>
+     {{(vm.publisherList | filter:{id:job.publisher.id})[0].location}}
+     </div>
+     <div class="col-xs-10 col-xs-offset-2 col-sm-4 col-sm-offset-0 col-md-3">
+     <p>Posted 5 days ago</p>
+     </div>
+     <div class="col-xs-10 col-xs-offset-2 col-sm-2 col-sm-offset-0 col-md-1">
+     <div class="job__star">
+     <a href="#" data-toggle="tooltip" data-placement="top" title="Save to favourites" class="job__star__link">
+     <i class="fa fa-star"></i>
+    </a>
+     </div>
+     </div>
+     </div>
+     </div>

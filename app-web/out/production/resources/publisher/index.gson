@@ -1,0 +1,8 @@
+import app.admin.jobsboard.Publisher
+
+model {
+	Iterable<Publisher> publisherList
+}
+
+json tmpl.publisher(publisherList ?: [])
+

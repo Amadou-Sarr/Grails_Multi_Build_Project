@@ -1,0 +1,7 @@
+import app.admin.jobsboard.Type
+
+model {
+	Type type
+}
+
+json tmpl.type(type)

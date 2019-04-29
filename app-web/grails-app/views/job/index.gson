@@ -1,0 +1,8 @@
+import app.admin.jobsboard.Job
+
+model {
+	Iterable<Job> jobList
+}
+
+json tmpl.job(jobList ?: [])
+

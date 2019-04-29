@@ -1,0 +1,6 @@
+/* your styles go here */
+
+.job-form-section.job-form-section--image {
+    background: center center url('../images/ux/meeting.jpg') no-repeat;
+    background-size: cover;
+}

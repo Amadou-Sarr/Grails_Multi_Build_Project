@@ -1,0 +1,42 @@
+<div class="nav" role="navigation">
+    <ul>
+        <li><a ui-sref="index" class="home">Home</a></li>
+        <li><a ui-sref="type.create" class="create">New Type</a></li>
+    </ul>
+</div>
+<div id="list-type" class="content scaffold-list" role="main">
+    <h1>Type List</h1>
+    <table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Last Updated</th>
+      <th>Date Created</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-class="{'even': $index%2 == 0, 'odd': $index%2 == 1}" ng-repeat="type in vm.typeList">
+      <td>
+        <a ui-sref="type.show({id: type.id})">{{type.id}}</a>
+      </td>
+      <td>
+        <span>{{type.name}}</span>
+      </td>
+      <td>
+        <span>{{type.description}}</span>
+      </td>
+      <td>
+        <span>{{type.lastUpdated | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>
+      </td>
+      <td>
+        <span>{{type.dateCreated | date:'yyyy-MM-dd HH:mm:ss Z'}}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+    <!--    <div class="pagination">
+            <g:paginate total="${partCount ?: 0}" />
+        </div>-->
+</div>

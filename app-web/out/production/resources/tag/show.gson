@@ -1,0 +1,7 @@
+import app.admin.jobsboard.Tag
+
+model {
+	Tag tag
+}
+
+json tmpl.tag(tag)

@@ -1,0 +1,7 @@
+import app.admin.jobsboard.Publisher
+
+model {
+	Publisher publisher
+}
+
+json g.render(publisher)

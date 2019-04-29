@@ -1,0 +1,66 @@
+<fieldset class="form">
+  <div class="fieldcontain required">
+    <label for="title">Title
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="title" id="title" ng-model="vm.job.title" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="description">Description
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="description" id="description" ng-model="vm.job.description" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="contactEmail">Contact Email
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="contactEmail" id="contactEmail" ng-model="vm.job.contactEmail" type="email" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="jobUrl">Job Url
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="jobUrl" id="jobUrl" ng-model="vm.job.jobUrl" type="text" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="applyInstructions">Apply Instructions
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="applyInstructions" id="applyInstructions" ng-model="vm.job.applyInstructions" type="text" />
+  </div>
+  <div class="fieldcontain">
+    <label for="salaryEstimate">Salary Estimate</label>
+    <input name="salaryEstimate" id="salaryEstimate" ng-model="vm.job.salaryEstimate" type="text" maxlength="102400" />
+  </div>
+  <div class="fieldcontain">
+    <label for="active">Active</label>
+    <input name="active" id="active" ng-model="vm.job.active" ng-init="vm.job.active = false" type="checkbox" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="expirationDate">Expiration Date
+      <span class="required-indicator">*</span>
+    </label>
+    <input required="" name="expirationDate" id="expirationDate" ng-model="vm.job.expirationDate" type="date" placeholder="YYYY-MM-DD" />
+  </div>
+  <div class="fieldcontain">
+    <label for="remote">Remote</label>
+    <input name="remote" id="remote" ng-model="vm.job.remote" ng-init="vm.job.remote = false" type="checkbox" />
+  </div>
+  <div class="fieldcontain required">
+    <label for="type">Type
+      <span class="required-indicator">*</span>
+    </label>
+    <select required="" name="type" id="type" ng-model="vm.job.type" ng-options="type for type in vm.typeList track by type.id"></select>
+  </div>
+  <div class="fieldcontain">
+    <label for="tags">Tags</label>
+    <select name="tags" id="tags" ng-model="vm.job.tags" ng-options="tag for tag in vm.tagList track by tag.id" multiple=""></select>
+  </div>
+  <div class="fieldcontain required">
+    <label for="publisher">Publisher
+      <span class="required-indicator">*</span>
+    </label>
+    <select required="" name="publisher" id="publisher" ng-model="vm.job.publisher" ng-options="publisher for publisher in vm.publisherList track by publisher.id"></select>
+  </div>
+</fieldset>
