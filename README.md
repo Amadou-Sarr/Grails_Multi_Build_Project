@@ -8,19 +8,31 @@ Les technologies utilisés sont :
 *******************************************
 Le Module Admin permet aux utilisateurs/administrateurs de gerer tous les Utilisateurs de l'application(publicateurs d'emplois, opérateurs ou régulateurs du sites, etc..), mais aussi les Tags ou secteurs professionnels, ainsi que la gestion des emplois à publier.
 Ce module est l'application cliente au Microservice auquel une requete asynchrone de recupération d'emplois depuis d'autres sites est faite automatiquement 2 fois par jour.
-Plugins  :  - Quartz Job Sheduller, - Spring Security core, - Jenkings, - Serenity, - Sellenium, - ....
+Plugins  : 
+- Quartz Job Sheduller,
+- Spring Security core 3.1.2,
+- Jenkings, 
+- Serenity,
+- Sellenium,
+- ....
 *******************************************
 Le Module Web sert d'entrée publique à l'ensemble des utilisateurs du site. 
 Les Utilisateurs peuvent consulter ou rechercher un emploi suivant plusieurs critères.
-Plugins : - angular, - asset-pipeline, - spring security Rest, jwt, - ...
+Plugins : 
+- angular, 
+- asset-pipeline, 
+- spring security Rest, jwt,
+- ...
 *******************************************
 Le Microservice fait l'import de manière assynchrone des emploi d'autres sites à travers leurs APIs. 
-Plugins : - ... (I will udate this )
+Plugins : 
+- ... (I will udate this )
 *******************************************
 Le Module Domain contient les Entités et les services utilisés par differentes applications.
 *******************************************
 Le module Specification est la base des spécifications et Tests à faire sur l'application. 
-Plugins: - Serenity
+Plugins:
+- Serenity
 *******************************************
 Le Module Mobile est remplacé par l'ionic App.
 ******************************************
@@ -33,3 +45,5 @@ Profiles :
 - mod-microservice : plugin --rest-api
 - mod-domain : plugin 
 
+**********************************************
+Je ferai un update pour les versions utilisées pour chaque plugin.
