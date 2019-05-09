@@ -11,7 +11,7 @@ Ce module est l'application cliente au Microservice auquel une requete asynchron
 Plugins  : 
 - Quartz Job Sheduller,
 - Spring Security core 3.1.2,
-- Jenkings, 
+- Jenkings,// --Removed-- 
 - Serenity,
 - Sellenium,
 - ....
