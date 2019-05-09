@@ -26,7 +26,7 @@ Plugins :
 *******************************************
 Le Microservice fait l'import de manière assynchrone des emploi d'autres sites à travers leurs APIs. 
 Plugins : 
-- ... (I will udate this )
+- ... ( // TODO   : update this )
 *******************************************
 Le Module Domain contient les Entités et les services utilisés par differentes applications.
 *******************************************
@@ -46,4 +46,4 @@ Profiles :
 - mod-domain : plugin 
 
 **********************************************
-Je ferai un update pour les versions utilisées pour chaque plugin.
+// TODO :  faire un update pour les versions utilisées pour chaque plugin.
