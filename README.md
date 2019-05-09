@@ -4,7 +4,7 @@ A Grails 3.2.3 Multi build Project
 Ceci est un projet Grails 3.2.3 avec des build multiple, c'est à dire avec plusieurs sous-projets comme module.
 Les technologies utilisés sont :
 - Grails : 3.2.3
-- Gradle : 2.3, 3.0, 3.5
+- Gradle : 2.3, 3.0
 *******************************************
 Le Module Admin permet aux utilisateurs/administrateurs de gerer tous les Utilisateurs de l'application(publicateurs d'emplois, opérateurs ou régulateurs du sites, etc..), mais aussi les Tags ou secteurs professionnels, ainsi que la gestion des emplois à publier.
 Ce module est l'application cliente au Microservice auquel une requete asynchrone de recupération d'emplois depuis d'autres sites est faite automatiquement 2 fois par jour.
